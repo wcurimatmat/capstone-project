@@ -1,0 +1,40 @@
+@use "../abstracts" as *;
+
+:root {
+    /* colors */
+
+    @each $scale, $value in $primary {
+        --clr-primary-#{$scale}: hsl(#{$value});
+    }
+
+    @each $scale, $value in $secondary {
+        --clr-secondary-#{$scale}: hsl(#{$value});
+    }
+
+    @each $scale, $value in $neutral {
+        --clr-neutral-#{$scale}: hsl(#{$value});
+    }
+
+    @each $type, $scales in $feedback {
+        @each $scale, $value in $scales {
+            --clr-#{$type}-#{$scale}: hsl(#{$value});
+        }
+    }
+
+    /* spacings */
+
+    @each $scale, $value in $spacings {
+        --spc-#{$scale}: #{$value};
+    }
+
+    /* typography */
+
+    --ff-heading: "Quattrocento", serif;
+    --ff-body: "Quattrocento Sans", sans-serif;
+
+    @each $type, $scales in $fontSizes {
+        @each $scale, $value in $scales {
+            --fs-#{$type}-#{$scale}: #{$value};
+        }
+    }
+}

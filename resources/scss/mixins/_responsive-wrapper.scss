@@ -1,0 +1,27 @@
+@mixin wrapper {
+    &__wrapper {
+        padding-inline: var(--spc-200);
+    }
+
+    @media screen and (min-width: 750px) {
+        &__wrapper {
+            padding-inline: var(--spc-400);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-top: var(--spc-800);
+
+        &__wrapper {
+            padding-inline: var(--spc-600);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__wrapper {
+            padding-inline: var(--spc-800);
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+    }
+}
