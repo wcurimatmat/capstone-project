@@ -1,0 +1,13 @@
+.Nav {
+    display: none;
+
+    @media screen and (min-width: 760px) {
+        display: block;
+    }
+    
+    &__navigationList {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-300);
+    }
+}

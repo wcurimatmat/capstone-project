@@ -1,0 +1,36 @@
+.Header {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: var(--spc-300) var(--spc-200);
+
+        @media screen and (min-width: 760px) {
+            padding-inline: var(--spc-400);
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-inline: var(--spc-600);
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-inline: var(--spc-900);
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin: 0 auto;
+            max-width: 1440px;
+        }
+    }
+
+    // Mobile Nav Button
+    &__mobileNavButtonWrapper {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 760px) {
+            display: none;
+        }
+    }
+}
