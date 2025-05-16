@@ -1,5 +1,5 @@
 import Header from "../Components/Web/Header/Header";
-import Footer from "../Components/Web/Header/Footer";
+import Footer from "../Components/Web/Footer/Footer";
 
 function WebLayout({ children }) {
     return (
