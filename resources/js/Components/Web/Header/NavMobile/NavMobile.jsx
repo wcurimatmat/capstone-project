@@ -1,4 +1,4 @@
-import { X } from "@phosphor-icons/react";
+import { XIcon } from "@phosphor-icons/react";
 import styles from "./NavMobile.module.scss";
 
 function NavMobile({ mobileMenuState, setMobileMenuState }) {
@@ -13,7 +13,7 @@ function NavMobile({ mobileMenuState, setMobileMenuState }) {
                     <button
                         onClick={() => setMobileMenuState(!setMobileMenuState)}
                     >
-                        <X size={24} />
+                        <XIcon size={24} />
                     </button>
                 </div>
 

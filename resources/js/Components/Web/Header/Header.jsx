@@ -1,4 +1,4 @@
-import { List } from "@phosphor-icons/react";
+import { ListIcon } from "@phosphor-icons/react";
 import NavMobile from "./NavMobile/NavMobile";
 import NavActions from "./NavActions/NavActions";
 import styles from "./Header.module.scss";
@@ -17,7 +17,7 @@ function Header() {
                         onClick={() => setMobileMenuState(!mobileMenuState)}
                         className={styles.Header__mobileNavButton}
                     >
-                        <List size={24} />
+                        <ListIcon size={24} />
                     </button>
                 </div>
 
