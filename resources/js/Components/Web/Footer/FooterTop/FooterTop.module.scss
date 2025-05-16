@@ -1,0 +1,32 @@
+.FooterTop {
+    &__wrapper {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-heading-400);
+        margin-bottom: var(--spc-200);
+    }
+
+    &__caption {
+        --_captionLineHeight: 1.5;
+        --_captionMaxWidth: 328px;
+        line-height: var(--_captionLineHeight);
+        margin-bottom: var(--spc-400);
+        max-width: var(--_captionMaxWidth);
+    }
+
+    &__socialList {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-200);
+    }
+}

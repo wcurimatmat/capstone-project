@@ -1,0 +1,11 @@
+.FooterContact {
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-100);
+    }
+
+    &__contact:first-of-type {
+        margin-bottom: var(--spc-100);
+    }
+}

@@ -1,0 +1,8 @@
+.FooterHeader {
+    margin-bottom: var(--spc-200);
+
+    &__textContent {
+        font-size: var(--fs-body-200);
+        text-transform: uppercase;
+    }
+}

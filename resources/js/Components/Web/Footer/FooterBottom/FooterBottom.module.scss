@@ -1,0 +1,45 @@
+.FooterBottom {
+    &__wrapper {
+        display: grid;
+        gap: var(--spc-300);
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: var(--spc-900);
+        }
+    }
+
+    /* Navigation Section */
+    &__navigationSectionWrapper {
+        display: grid;
+        gap: var(--spc-300);
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: var(--spc-600);
+        }
+
+        @media screen and (min-width: 1028px) {
+            gap: var(--spc-900);
+        }
+
+        @media screen and (min-width: 1200px) {
+            gap: var(--spc-900);
+        }
+    }
+
+    /* Contact Section */
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-100);
+    }
+
+    &__contact:first-of-type {
+        margin-bottom: var(--spc-100);
+    }
+}

@@ -1,0 +1,29 @@
+.Footer {
+    &__wrapper {
+        margin: 0 auto;
+        background-color: var(--clr-primary-200);
+        padding: var(--spc-400) var(--spc-200);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spc-300);
+
+        @media screen and (min-width: 768px) {
+            padding: var(--spc-500);
+        }
+
+        @media screen and (min-width: 1028px) {
+            padding: var(--spc-700);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: var(--spc-900);
+        }
+
+        @media screen and (min-width: 1440px) {
+            --_wrapperMaxWidth: 1440px;
+            max-width: var(--_wrapperMaxWidth);
+        }
+    }
+}
