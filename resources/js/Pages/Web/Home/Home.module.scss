@@ -53,7 +53,7 @@
         display: grid;
         gap: var(--spc-800);
 
-        @media screen and (min-width: 1024px) {
+        @media screen and (min-width: 768px) {
             display: flex;
         }
     }
@@ -69,17 +69,39 @@
     }
 
     &__aboutSectionImage {
+        width: var(--_aboutSectionImageWidth);
+
+        @media screen and (min-width: 768px) {
+            --_aboutSectionImageWidth: 195rem;
+        }
+
         @media screen and (min-width: 1024px) {
-            --_aboutSectionImageWidth: 120rem;
-            width: var(--_aboutSectionImageWidth);
+            --_aboutSectionImageWidth: 150rem;
         }
     }
 
     /* Value Proposition Section */
 
+    &__valuePropositionSectionContainer {
+        display: grid;
+        gap: var(--spc-400);
+    }
+
     &__valuePropositionList {
         display: grid;
         gap: var(--spc-200);
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__valuePropositionListItem {
+        @media screen and (min-width: 640px) {
+            --_flexBasis: 24rem;
+            flex: 1 1 var(--_flexBasis);
+        }
     }
 
     &__valuePropositionCard {
@@ -145,7 +167,7 @@
     &__sectionContainerPadding {
         padding: 0 var(--spc-200);
 
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 640px) {
             padding-inline: var(--spc-400);
         }
 
