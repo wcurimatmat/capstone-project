@@ -44,11 +44,7 @@
         // spc-300
         margin-bottom: clamp(var(--spc-300), 2vw + 1rem, var(--spc-600));
         font-family: var(--ff-heading);
-        font-size: clamp(
-            var(--fs-body-300),
-            2vw + 1rem,
-            var(--fs-display-300)
-        );
+        font-size: clamp(var(--fs-body-300), 2vw + 1rem, var(--fs-display-300));
     }
 
     /* About Section */
@@ -129,5 +125,17 @@
         padding: 0 var(--spc-200);
         display: grid;
         gap: var(--spc-400);
+
+        @media screen and (min-width: 760px) {
+            padding-inline: var(--spc-400);
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-inline: var(--spc-600);
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-inline: var(--spc-900);
+        }
     }
 }
