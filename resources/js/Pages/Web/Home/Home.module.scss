@@ -1,0 +1,133 @@
+.Home {
+    display: grid;
+    gap: var(--spc-600);
+
+    @media screen and (min-width: 1440px) {
+        --_maxWidth: 1440px;
+        max-width: var(--_maxWidth);
+        margin: 0 auto;
+    }
+
+    /* Hero Section */
+
+    &__hero {
+        --_backgroundImageGradient: hsla(359 4% 19% / 0.56);
+
+        background-image: linear-gradient(var(--_backgroundImageGradient)),
+            url("/resources/assets/visuals/pexels-migsr87-8051256.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 32%;
+        padding-block: calc(var(--spc-900) + var(--spc-300));
+        display: flex;
+
+        @media screen and (min-width: 768px) {
+            padding-block: calc(var(--spc-900) * 2);
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-block: calc(var(--spc-900) * 2.4);
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-block: calc(var(--spc-900) * 3);
+        }
+    }
+
+    &__heading {
+        margin: 0 auto;
+        text-align: center;
+        color: var(--clr-neutral-100);
+    }
+
+    &__title {
+        // spc-300
+        margin-bottom: clamp(var(--spc-300), 2vw + 1rem, var(--spc-600));
+        font-family: var(--ff-heading);
+        font-size: clamp(
+            var(--fs-body-300),
+            2vw + 1rem,
+            var(--fs-display-300)
+        );
+    }
+
+    /* About Section */
+
+    &__textContent {
+        display: grid;
+        gap: var(--spc-300);
+    }
+
+    /* Value Proposition Section */
+
+    &__valuePropositionList {
+        display: grid;
+        gap: var(--spc-200);
+    }
+
+    &__valuePropositionCard {
+        background-color: var(--clr-primary-100);
+        padding: var(--spc-300);
+    }
+
+    &__cardHeading {
+        margin-top: var(--spc-300);
+    }
+
+    &__cardHeadingTitle {
+        margin-bottom: var(--spc-100);
+    }
+
+    /* Shop Banner Section */
+
+    &__shopBanner {
+        --_backgroundImageGradient: hsla(359 4% 19% / 0.4);
+        --_backgroundPositionX: 32%;
+
+        background-image: linear-gradient(var(--_backgroundImageGradient)),
+            url("/resources/assets/visuals/pexels-ron-lach-8387828.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: var(--_backgroundPositionX) center;
+        padding-block: calc(var(--spc-900) + var(--spc-300));
+        display: flex;
+    }
+
+    /* Shared */
+
+    &__link___primary {
+        background-color: var(--clr-primary-300);
+        padding: var(--spc-200) var(--spc-300);
+        font-weight: bold;
+        width: max-content;
+    }
+
+    &__link___secondary {
+        border: 2px solid var(--clr-primary-300);
+        padding: var(--spc-200) var(--spc-300);
+        font-weight: bold;
+    }
+
+    &__headingBlock {
+        display: grid;
+        gap: var(--spc-100);
+    }
+
+    &__sectionTitle {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-heading-200);
+        font-weight: bold;
+    }
+
+    &__headingUnderline {
+        width: var(--spc-900);
+        height: 2px;
+        background-color: var(--clr-primary-200);
+    }
+
+    &__sectionContainer {
+        padding: 0 var(--spc-200);
+        display: grid;
+        gap: var(--spc-400);
+    }
+}
