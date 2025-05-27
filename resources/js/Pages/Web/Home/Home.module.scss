@@ -40,13 +40,6 @@
         color: var(--clr-neutral-100);
     }
 
-    &__title {
-        // spc-300
-        margin-bottom: clamp(var(--spc-300), 2vw + 1rem, var(--spc-600));
-        font-family: var(--ff-heading);
-        font-size: clamp(var(--fs-body-300), 2vw + 1rem, var(--fs-display-300));
-    }
-
     /* About Section */
 
     &__aboutSectionContainer {
@@ -120,7 +113,7 @@
     /* Shop Banner Section */
 
     &__shopBanner {
-        --_backgroundImageGradient: hsla(359 4% 19% / 0.4);
+        --_backgroundImageGradient: hsla(359 4% 19% / 0.56);
         --_backgroundPositionX: 32%;
 
         background-image: linear-gradient(var(--_backgroundImageGradient)),
@@ -130,9 +123,37 @@
         background-position: var(--_backgroundPositionX) center;
         padding-block: calc(var(--spc-900) + var(--spc-300));
         display: flex;
+
+        @media screen and (min-width: 768px) {
+            padding-block: calc(var(--spc-900) * 2);
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-block: calc(var(--spc-900) * 2.4);
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-block: calc(var(--spc-900) * 3);
+        }
     }
 
     /* Shared */
+
+    /** 
+        1. Hero section
+        2. Shop Banner Section
+    */
+
+    &__title {
+        margin-bottom: clamp(var(--spc-300), 2vw + 1rem, var(--spc-600));
+        font-family: var(--ff-heading);
+        font-size: clamp(var(--fs-body-300), 2vw + 1rem, var(--fs-display-300));
+    }
+
+    /** 
+        1. Hero section
+        2. Shop Banner Section
+    */
 
     &__link___primary {
         background-color: var(--clr-primary-300);
@@ -163,6 +184,12 @@
         height: 2px;
         background-color: var(--clr-primary-200);
     }
+
+    /** 
+        1. Hero section
+        2. About Section
+        3. Shop Banner Section
+    */
 
     &__sectionContainerPadding {
         padding: 0 var(--spc-200);
