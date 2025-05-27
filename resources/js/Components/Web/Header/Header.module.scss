@@ -3,7 +3,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: var(--spc-300) var(--spc-200);
+        padding: var(--spc-200) var(--spc-200);
 
         @media screen and (min-width: 760px) {
             padding-inline: var(--spc-400);
