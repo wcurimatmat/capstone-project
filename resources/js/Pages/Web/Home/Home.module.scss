@@ -1,6 +1,6 @@
 .Home {
     display: grid;
-    gap: var(--spc-600);
+    gap: clamp(var(--spc-600), 8vw + 1rem, calc(var(--spc-900) * 2));
 
     @media screen and (min-width: 1440px) {
         --_maxWidth: 1440px;
@@ -49,9 +49,30 @@
 
     /* About Section */
 
-    &__textContent {
+    &__aboutSectionContainer {
         display: grid;
-        gap: var(--spc-300);
+        gap: var(--spc-800);
+
+        @media screen and (min-width: 1024px) {
+            display: flex;
+        }
+    }
+
+    &__textContent {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spc-400);
+    }
+
+    &__sectionBody {
+        line-height: 2;
+    }
+
+    &__aboutSectionImage {
+        @media screen and (min-width: 1024px) {
+            --_aboutSectionImageWidth: 120rem;
+            width: var(--_aboutSectionImageWidth);
+        }
     }
 
     /* Value Proposition Section */
@@ -121,10 +142,8 @@
         background-color: var(--clr-primary-200);
     }
 
-    &__sectionContainer {
+    &__sectionContainerPadding {
         padding: 0 var(--spc-200);
-        display: grid;
-        gap: var(--spc-400);
 
         @media screen and (min-width: 760px) {
             padding-inline: var(--spc-400);
