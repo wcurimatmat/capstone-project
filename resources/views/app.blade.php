@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
 
     @viteReactRefresh
-    @vite("resources/js/app.jsx")
+    @vite(["resources/scss/index.scss" ,"resources/js/app.jsx"])
     @inertiaHead
     @routes
 </head>
