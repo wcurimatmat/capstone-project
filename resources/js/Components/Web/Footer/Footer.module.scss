@@ -1,4 +1,6 @@
 .Footer {
+    margin-top: clamp(var(--spc-600), 8vw + 1rem, calc(var(--spc-900) * 2));
+
     &__wrapper {
         margin: 0 auto;
         background-color: var(--clr-primary-200);
