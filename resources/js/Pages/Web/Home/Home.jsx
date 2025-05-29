@@ -1,6 +1,7 @@
 import AboutImage from "../../../../assets/visuals/pexels-daroon-19087201.jpg";
 import { SparkleIcon, ThumbsUpIcon, MoneyIcon } from "@phosphor-icons/react";
 import WebLayout from "../../../Layout/WebLayout";
+import ProductCard from "../../../Components/Shared/ProductCard/ProductCard";
 import styles from "./Home.module.scss";
 
 function Home() {
@@ -27,13 +28,27 @@ function Home() {
                     className={styles.Home__featured}
                     aria-label="Featured Section"
                 >
-                    <div className={styles.Home__featuredContainer}>
+                    <div
+                        className={`${styles.Home__sectionContainerPadding} ${styles.Home__featuredSectionContainer}`}
+                    >
                         <header className={styles.Home__headingBlock}>
-                            <h2>Featured</h2>
-                            <div className="underline"></div>
+                            <h2 class={styles.Home__sectionTitle}>Featured</h2>
+                            <div
+                                className={styles.Home__headingUnderline}
+                            ></div>
                         </header>
 
-                        <div className={styles.Home__featureItemList}></div>
+                        <ul className={styles.Home__featureList}>
+                            <li className={styles.Home__featureListItem}>
+                                <ProductCard />
+                            </li>
+                            <li className={styles.Home__featureListItem}>
+                                <ProductCard />
+                            </li>
+                            <li className={styles.Home__featureListItem}>
+                                <ProductCard />
+                            </li>
+                        </ul>
                     </div>
                 </section>
 
