@@ -40,6 +40,21 @@
         color: var(--clr-neutral-100);
     }
 
+    /* Featured Section */
+
+    &__featuredSectionContainer {
+        display: grid;
+        gap: var(--spc-400);
+    }
+
+    &__featureList {
+        --_min: 250px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(var(--_min), 1fr));
+        gap: var(--spc-400);
+        justify-content: center;
+    }
+
     /* About Section */
 
     &__aboutSectionContainer {
@@ -188,7 +203,8 @@
     /** 
         1. Hero section
         2. About Section
-        3. Shop Banner Section
+        3. Featured Section
+        4. Shop Banner Section
     */
 
     &__sectionContainerPadding {
