@@ -1,0 +1,25 @@
+.ProductCard {
+
+    &__wrapper {
+        display: grid;
+        gap: var(--spc-100);
+    }
+
+    /* Item Image */
+
+    &__itemImage {
+        border: 2px solid var(--clr-neutral-200);
+    }
+    
+    /* Details Panel */
+    
+    &__itemName {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-heading-100);
+        font-weight: bold;
+    }
+
+    &__itemPrice {
+        font-size: var(--fs-body-400)
+    }
+}
