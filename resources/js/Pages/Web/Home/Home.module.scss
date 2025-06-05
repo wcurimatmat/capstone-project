@@ -52,7 +52,6 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(var(--_min), 1fr));
         gap: var(--spc-400);
-        justify-content: center;
     }
 
     /* About Section */
