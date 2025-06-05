@@ -9,23 +9,22 @@
         flex-direction: column;
         gap: var(--spc-300);
 
-        @media screen and (min-width: 768px) {
-            padding: var(--spc-500);
+        @media screen and (min-width: 640px) {
+            padding-inline: var(--spc-400);
         }
 
-        @media screen and (min-width: 1028px) {
-            padding: var(--spc-700);
+        @media screen and (min-width: 1024px) {
+            padding-inline: var(--spc-600);
         }
 
         @media screen and (min-width: 1200px) {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: var(--spc-900);
+            padding-inline: var(--spc-900);
         }
 
         @media screen and (min-width: 1440px) {
-            --_wrapperMaxWidth: 1440px;
-            max-width: var(--_wrapperMaxWidth);
+            --_maxWidth: 1440px;
+            max-width: var(--_maxWidth);
+            margin: 0 auto;
         }
     }
 }
