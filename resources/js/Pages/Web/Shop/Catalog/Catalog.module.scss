@@ -1,0 +1,15 @@
+.Catalog {
+    --_min: 125px;
+
+    display: grid;
+    gap: var(--spc-400) var(--spc-300);
+    grid-template-columns: repeat(auto-fit, minmax(var(--_min), 1fr));
+    justify-items: center;
+
+    @media screen and (min-width: 1024px) {
+        --_min: 200px;
+
+        flex-basis: 80%;
+        gap: var(--spc-400);
+    }
+}
