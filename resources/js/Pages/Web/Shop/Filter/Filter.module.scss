@@ -1,0 +1,53 @@
+.Filter {
+    &__filterHeaderTitle {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: var(--spc-100);
+    }
+
+    &__filters {
+        padding-inline-start: var(--spc-200);
+    }
+
+    &__filterList {
+        display: grid;
+        gap: var(--spc-100);
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
+
+    @media screen and (width < 1024px) {
+        --_filterWidth: 14rem;
+        --_filterHeight: 24rem;
+        --_topPosition: 8rem;
+
+        background-color: var(--clr-primary-200);
+        position: fixed;
+        top: var(--_topPosition);
+        right: 0;
+        width: var(--_filterWidth);
+        height: var(--_filterHeight);
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        padding: var(--spc-300);
+        border-radius: 8px 0 0 8px;
+
+        &__isFilterActive {
+            transform: translateX(0);
+        }
+
+        &__filterButtonWrapper {
+            display: flex;
+            margin-block-end: var(--spc-600);
+            justify-content: flex-end;
+        }
+    }
+
+    @media screen and (width >= 1024px) {
+        &__filterButtonWrapper {
+            display: none;
+        }
+    }
+}
