@@ -48,6 +48,9 @@ function Home() {
                             <li className={styles.Home__featureListItem}>
                                 <ProductCard />
                             </li>
+                            <li className={styles.Home__featureListItem}>
+                                <ProductCard />
+                            </li>
                         </ul>
                     </div>
                 </section>
