@@ -1,0 +1,13 @@
+.Ellipsis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spc-200);
+
+    &__ellipsis {
+        width: var(--spc-100);
+        height: var(--spc-100);
+        border-radius: var(--spc-200);
+        background-color: var(--clr-primary-200);
+    }
+}
