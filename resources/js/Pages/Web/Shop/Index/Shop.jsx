@@ -25,7 +25,7 @@ function Shop() {
                         className={styles.Shop__filterButton}
                         onClick={() => setFilterState(true)}
                     >
-                        <FunnelIcon size={18} />
+                        <FunnelIcon size={18} /> 
                         <span>Filter</span>
                     </button>
                 </section>
