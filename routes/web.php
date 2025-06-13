@@ -8,3 +8,5 @@ Route::get("/", function () {
 
 Route::inertia("/shop", "Web/Shop/Index/Index");
 Route::inertia("/about", "Web/About/Index");
+
+Route::inertia("/shop/item-name", "Web/Shop/Show/Show");
