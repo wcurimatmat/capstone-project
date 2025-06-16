@@ -10,3 +10,7 @@ Route::inertia("/shop", "Web/Shop/Index/Index");
 Route::inertia("/about", "Web/About/Index");
 
 Route::inertia("/shop/item-name", "Web/Shop/Show/Show");
+
+// Auth
+
+Route::inertia("/login/session/create", "Web/Auth/Login/Create");
