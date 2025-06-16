@@ -1,0 +1,64 @@
+.Login {
+    padding-inline: var(--spc-200);
+    padding-block: var(--spc-600);
+
+    @media screen and (min-width: 450px) {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    // Page Header
+
+    &__appLogoImage {
+        width: var(--spc-700);
+    }
+
+    // Main Content
+
+    &__mainContent {
+        margin-block: var(--spc-600);
+    }
+
+    // Main Content Header
+
+    &__mainContentHeader {
+        display: grid;
+        gap: var(--spc-100);
+        margin-block-end: var(--spc-400);
+    }
+
+    &__headerTitle {
+        font-family: var(--ff-heading);
+        font-size: var(--fs-heading-400);
+    }
+
+    // Login Form
+
+    &__loginFormWrapper {
+        display: grid;
+        gap: var(--spc-200);
+    }
+
+    &__formInput {
+        padding: var(--spc-100);
+        width: 100%;
+        border: 1px solid var(--clr-neutral-200);
+        outline: transparent;
+    }
+
+    &__formInput:focus {
+        border: 1px solid var(--clr-primary-200);
+    }
+
+    // Page Footer 
+
+    &__pageFooter {
+        text-align: center;
+    }
+
+    &__footerLink {
+        color: var(--clr-primary-400);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
