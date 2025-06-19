@@ -1,5 +1,4 @@
 import styles from "./FormField.module.scss";
-import PropTypes from "prop-types";
 
 function FormField({ id, label, children }) {
     return (
