@@ -13,5 +13,5 @@ Route::inertia("/shop/item-name", "Web/Shop/Show/Show");
 
 // Auth
 
-Route::inertia("/login/session/create", "Web/Auth/Login/Create");
-Route::inertia("register/store", "Web/Auth/Register/Store");
+Route::inertia("/login/session/create", "Web/Auth/Login/Create")->name("auth.create");
+Route::inertia("register/store", "Web/Auth/Register/Store")->name("auth.store");
