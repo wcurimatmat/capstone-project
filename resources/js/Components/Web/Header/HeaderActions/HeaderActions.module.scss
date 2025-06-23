@@ -1,0 +1,26 @@
+.HeaderActions {
+    flex: 1;
+
+    &__actionList {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: var(--spc-200);
+    }
+
+    // action button
+
+    &__actionButton {
+        // initial style
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    // user action
+    &__userAction {
+        position: relative;
+    }
+}
