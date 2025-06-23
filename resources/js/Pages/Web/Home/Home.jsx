@@ -32,7 +32,7 @@ function Home() {
                         className={`${styles.Home__sectionContainerPadding} ${styles.Home__featuredSectionContainer}`}
                     >
                         <header className={styles.Home__headingBlock}>
-                            <h2 class={styles.Home__sectionTitle}>Featured</h2>
+                            <h2 className={styles.Home__sectionTitle}>Featured</h2>
                             <div
                                 className={styles.Home__headingUnderline}
                             ></div>
