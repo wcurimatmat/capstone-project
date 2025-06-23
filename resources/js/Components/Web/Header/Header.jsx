@@ -1,10 +1,17 @@
+// Icons
 import { ListIcon } from "@phosphor-icons/react";
-import NavMobile from "./NavMobile/NavMobile";
-import NavActions from "./NavActions/NavActions";
-import styles from "./Header.module.scss";
-import NavAppLogo from "./NavAppLogo/NavAppLogo";
-import { useState } from "react";
+
+// Partials
 import Nav from "./Nav/Nav";
+import NavAppLogo from "./NavAppLogo/NavAppLogo";
+import HeaderActions from "./HeaderActions/HeaderActions";
+import NavMobile from "./NavMobile/NavMobile";
+
+// Styles
+import styles from "./Header.module.scss";
+
+// React
+import { useState } from "react";
 
 function Header() {
     const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -27,7 +34,7 @@ function Header() {
                     mobileMenuState={mobileMenuState}
                     setMobileMenuState={setMobileMenuState}
                 />
-                <NavActions />
+                <HeaderActions />
             </div>
         </header>
     );
