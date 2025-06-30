@@ -1,0 +1,53 @@
+@mixin anchor-border-radius {
+    border-radius: var(--spc-50);
+}
+
+@mixin anchor-link-padding($padding: "base") {
+    @if $padding == "base" {
+        padding: var(--spc-100) var(--spc-300);
+    }
+
+    @if $padding == "medium" {
+        padding: var(--spc-200) var(--spc-400);
+    }
+}
+
+@mixin link-text-content-style {
+    font-weight: bold;
+}
+
+@mixin hoveredLink {
+}
+
+.Anchor {
+    &___base {
+        width: fit-content;
+        padding: var(--spc-200) var(--spc-400);
+    }
+
+    &___primaryLink {
+        background-color: var(--clr-primary-200);
+        transition: background-color 250ms ease-in-out;
+        width: max-content;
+        @include anchor-border-radius;
+        @include anchor-link-padding;
+        @include link-text-content-style;
+
+        &:hover {
+            background-color: var(--clr-primary-300);
+        }
+    }
+
+    &___secondaryLink {
+        border: 2px solid var(--clr-primary-200);
+        transition: all 250ms ease-in-out;
+        @include anchor-border-radius;
+        @include anchor-link-padding("medium");
+        @include link-text-content-style;
+
+        &:hover {
+            background-color: var(--clr-primary-200);
+            color: var(--clr-neutral-700);
+        }
+    }
+}
