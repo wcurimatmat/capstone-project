@@ -1,9 +1,8 @@
 // icons
 import { ShoppingBagIcon, UserCircleIcon } from "@phosphor-icons/react";
 
-// partials
-import HeaderUserMenu from "../HeaderUserMenu/HeaderUserMenu";
-import HeaderGuestMenu from "../HeaderGuestMenu/HeaderGuestMenu";
+// components
+import HeaderUserActionMenu from "../HeaderUserActionMenu/HeaderUserActionMenu";
 
 // styles
 import styles from "./HeaderActions.module.scss";
@@ -35,22 +34,18 @@ function HeaderActions() {
                 >
                     <button
                         title="User"
-                        onClick={() => setUserActionState(!userActionState)}
+                        onClick={() => setUserActionState(true)}
                         className={styles.HeaderActions__actionButton}
+                        aria-expanded={userActionState ? true : false}
+                        aria-controls="header-user-menu"
                     >
                         <UserCircleIcon size={24} />
                     </button>
-                    {isUserAuthenticated ? (
-                        <HeaderUserMenu
-                            userActionState={userActionState}
-                            setUserActionState={setUserActionState}
-                        />
-                    ) : (
-                        <HeaderGuestMenu
-                            userActionState={userActionState}
-                            setUserActionState={setUserActionState}
-                        />
-                    )}
+                    <HeaderUserActionMenu
+                        userActionState={userActionState}
+                        setUserActionState={setUserActionState}
+                        isUserAuthenticated={isUserAuthenticated}
+                    />
                 </li>
             </ul>
         </div>
