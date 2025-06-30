@@ -1,9 +1,11 @@
-// @mixin base-button-style {
-//     width: 100%;
-// }
+$button-radius: var(--spc-50);
 
-@mixin button-text-content {
-    font-weight: bold;
+@mixin button-base-style {
+    outline: transparent;
+}
+
+@mixin button-cursor {
+    cursor: pointer;
 }
 
 @mixin button-padding($padding: "default") {
@@ -14,19 +16,46 @@
 
 .Button {
     &___primaryButton {
-        // @include base-button-style;
+        background-color: var(--clr-primary-200);
+        border: none;
+        transition: background-color 250ms ease-in-out;
+        border-radius: $button-radius;
+        font-weight: bold;
+        @include button-base-style;
         @include button-padding;
+        @include button-cursor;
+
+        &:hover {
+            background-color: var(--clr-primary-300);
+        }
+    }
+
+    &___secondaryButton {
+        background: none;
+        border: 2px solid var(--clr-primary-200);
+        transition: all 250ms ease-in-out;
+        border-radius: $button-radius;
+        font-weight: bold;
+        @include button-base-style;
+        @include button-padding;
+        @include button-cursor;
+
+        &:hover {
+            background-color: var(--clr-primary-300);
+            border: 2px solid var(--clr-primary-300);
+        }
     }
 
     &__productCardButton {
         width: 100%;
         background-color: var(--clr-primary-200);
-        border-radius: var(--spc-50);
         border: none;
-        cursor: pointer;
         transition: background-color 250ms ease-in-out;
+        border-radius: $button-radius;
+        font-weight: bold;
+        @include button-base-style;
         @include button-padding;
-        @include button-text-content;
+        @include button-cursor;
 
         &:hover {
             background-color: var(--clr-primary-300);
