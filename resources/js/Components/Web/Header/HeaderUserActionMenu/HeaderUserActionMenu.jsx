@@ -6,7 +6,7 @@ import styles from "./HeaderUserActionMenu.module.scss";
 
 // components
 import Button from "../../../Shared/Button/Button";
-import HeaderUserMenu from "../HeaderAuthUserMenu/HeaderUserMenu";
+import HeaderUserMenu from "../HeaderUserMenu/HeaderUserMenu";
 import HeaderGuestMenu from "../HeaderGuestMenu/HeaderGuestMenu";
 
 function MenuContent({ isUserAuthenticated }) {
