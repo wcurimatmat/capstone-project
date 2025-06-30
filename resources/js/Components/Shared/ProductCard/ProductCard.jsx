@@ -1,6 +1,9 @@
 import ProductImage from "../../../../assets/visuals/item-4.jpg";
 import styles from "./ProductCard.module.scss";
 
+// components
+import ProductCardButton from "./ProductCardButton/ProductCardButton";
+
 function ProductCard() {
     return (
         <>
@@ -25,12 +28,9 @@ function ProductCard() {
                     </section>
 
                     <form action="" className={styles.ProductCard__form}>
-                        <button
-                            type="submit"
-                            className={styles.ProductCard__submitButton}
-                        >
+                        <ProductCardButton type="submit">
                             Add To Cart
-                        </button>
+                        </ProductCardButton>
                     </form>
                 </div>
             </article>
