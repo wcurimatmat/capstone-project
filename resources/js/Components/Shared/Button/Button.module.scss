@@ -15,7 +15,7 @@ $button-radius: var(--spc-50);
 }
 
 .Button {
-    &___primaryButton {
+    &__primaryButton {
         background-color: var(--clr-primary-200);
         border: none;
         transition: background-color 250ms ease-in-out;
@@ -30,7 +30,7 @@ $button-radius: var(--spc-50);
         }
     }
 
-    &___secondaryButton {
+    &__secondaryButton {
         background: none;
         border: 2px solid var(--clr-primary-200);
         transition: all 250ms ease-in-out;
@@ -60,5 +60,11 @@ $button-radius: var(--spc-50);
         &:hover {
             background-color: var(--clr-primary-300);
         }
+    }
+
+    &__iconButton {
+        background: none;
+        border: none;
+        cursor: pointer;
     }
 }
