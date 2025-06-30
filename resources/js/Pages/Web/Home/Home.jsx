@@ -4,6 +4,9 @@ import WebLayout from "../../../Layout/WebLayout";
 import ProductCard from "../../../Components/Shared/ProductCard/ProductCard";
 import styles from "./Home.module.scss";
 
+// components
+import Anchor from "../../../Components/Shared/Anchor/Anchor";
+
 function Home() {
     return (
         <WebLayout>
@@ -17,9 +20,10 @@ function Home() {
                         <h1 className={styles.Home__title}>
                             Fashion That Fits You Perfectly
                         </h1>
-                        <a href="#" className={styles.Home__link___secondary}>
+
+                        <Anchor href="#" variant="secondary">
                             Explore Shop
-                        </a>
+                        </Anchor>          
                     </header>
                 </section>
 
@@ -32,7 +36,9 @@ function Home() {
                         className={`${styles.Home__sectionContainerPadding} ${styles.Home__featuredSectionContainer}`}
                     >
                         <header className={styles.Home__headingBlock}>
-                            <h2 className={styles.Home__sectionTitle}>Featured</h2>
+                            <h2 className={styles.Home__sectionTitle}>
+                                Featured
+                            </h2>
                             <div
                                 className={styles.Home__headingUnderline}
                             ></div>
@@ -86,9 +92,7 @@ function Home() {
                                 focus on what truly matters.
                             </p>
 
-                            <a href="#" className={styles.Home__link___primary}>
-                                Explore Shop
-                            </a>
+                            <Anchor href="#">Explore Shop</Anchor>
                         </section>
 
                         <figure>
@@ -221,9 +225,9 @@ function Home() {
                         <h2 className={styles.Home__title}>
                             Chic, Comfortable, and Always on Trend
                         </h2>
-                        <a href="#" className={styles.Home__link___secondary}>
+                        <Anchor href="#" variant="secondary">
                             Explore Shop
-                        </a>
+                        </Anchor>
                     </header>
                 </section>
             </div>
