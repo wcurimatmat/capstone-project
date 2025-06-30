@@ -169,19 +169,6 @@
         2. Shop Banner Section
     */
 
-    &__link___primary {
-        background-color: var(--clr-primary-300);
-        padding: var(--spc-200) var(--spc-300);
-        font-weight: bold;
-        width: max-content;
-    }
-
-    &__link___secondary {
-        border: 2px solid var(--clr-primary-300);
-        padding: var(--spc-200) var(--spc-300);
-        font-weight: bold;
-    }
-
     &__headingBlock {
         display: grid;
         gap: var(--spc-100);
