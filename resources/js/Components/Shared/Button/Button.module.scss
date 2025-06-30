@@ -1,0 +1,35 @@
+// @mixin base-button-style {
+//     width: 100%;
+// }
+
+@mixin button-text-content {
+    font-weight: bold;
+}
+
+@mixin button-padding($padding: "default") {
+    @if $padding == "default" {
+        padding-block: var(--spc-200);
+    }
+}
+
+.Button {
+    &___primaryButton {
+        // @include base-button-style;
+        @include button-padding;
+    }
+
+    &__productCardButton {
+        width: 100%;
+        background-color: var(--clr-primary-200);
+        border-radius: var(--spc-50);
+        border: none;
+        cursor: pointer;
+        transition: background-color 250ms ease-in-out;
+        @include button-padding;
+        @include button-text-content;
+
+        &:hover {
+            background-color: var(--clr-primary-300);
+        }
+    }
+}
