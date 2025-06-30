@@ -3,6 +3,9 @@ import ItemMockImage from "/resources/assets/visuals/item-4.jpg";
 import WebLayout from "/resources/js/Layout/WebLayout";
 import Dropdown from "../Dropdown/Dropdown";
 
+// components
+import Button from "/resources/js/Components/Shared/Button/Button";
+
 function ItemView() {
     return (
         <WebLayout>
@@ -25,32 +28,35 @@ function ItemView() {
                             />
                         </figure>
                         <div className={styles.ItemView__itemViewPanelGroup}>
-                            <header className={styles.ItemView__itemViewHeading}>
+                            <header
+                                className={styles.ItemView__itemViewHeading}
+                            >
                                 <h1 className={styles.ItemView__itemName}>
                                     Lorem ipsum dolor sit amet.
                                 </h1>
-                                <p className={styles.ItemView__itemPrice}>₱99.99</p>
+                                <p className={styles.ItemView__itemPrice}>
+                                    ₱99.99
+                                </p>
                             </header>
-                            
-                            <form action="" className={styles.ItemView__itemForm}>
+
+                            <form
+                                action=""
+                                className={styles.ItemView__itemForm}
+                            >
                                 <div className={styles.ItemView__formGroup}>
                                     <label
                                         htmlFor="size-option"
-                                        className={styles.ItemView__itemFormLabel}
+                                        className={
+                                            styles.ItemView__itemFormLabel
+                                        }
                                     >
                                         Size
                                     </label>
                                     <Dropdown />
                                 </div>
                                 <div className={styles.ItemView__formActions}>
-                                    <button className={styles.ItemView__formAction}>
-                                        Buy Now
-                                    </button>
-                                    <input
-                                        type="submit"
-                                        value="Add To Bag"
-                                        className={styles.ItemView__formAction}
-                                    />
+                                    <Button className={styles.ItemView__formAction}>Buy Now</Button>
+                                    <Button className={styles.ItemView__formAction} variant="secondary">Add To Bag</Button>
                                 </div>
                             </form>
                         </div>
@@ -63,9 +69,7 @@ function ItemView() {
                 >
                     <div className={styles.ItemView__contentGroup}>
                         <header className={styles.ItemView__contentHeader}>
-                            <h2
-                                className={styles.ItemView__contentTitle}
-                            >
+                            <h2 className={styles.ItemView__contentTitle}>
                                 Description
                             </h2>
                         </header>
@@ -88,9 +92,7 @@ function ItemView() {
                     </div>
                     <div className={styles.ItemView__contentGroup}>
                         <header className={styles.ItemView__contentHeader}>
-                            <h2
-                                className={styles.ItemView__contentTitle}
-                            >
+                            <h2 className={styles.ItemView__contentTitle}>
                                 Materials
                             </h2>
                         </header>
