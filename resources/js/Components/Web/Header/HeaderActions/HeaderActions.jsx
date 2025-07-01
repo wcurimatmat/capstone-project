@@ -7,8 +7,9 @@ import HeaderUserActionMenu from "../HeaderUserActionMenu/HeaderUserActionMenu";
 // styles
 import styles from "./HeaderActions.module.scss";
 
-// react
+// dependencies
 import { useState, useEffect } from "react";
+import { Link } from "@inertiajs/react";
 
 function HeaderActions() {
     const [userActionState, setUserActionState] = useState(false);
@@ -25,9 +26,9 @@ function HeaderActions() {
         <div className={styles.HeaderActions}>
             <ul role="list" className={styles.HeaderActions__actionList}>
                 <li className={styles.HeaderActions__actionItem}>
-                    <a href="">
+                    <Link href={route("cart.index")}>
                         <ShoppingBagIcon size={24} />
-                    </a>
+                    </Link>
                 </li>
                 <li
                     className={`${styles.HeaderActions__actionItem} ${styles.HeaderActions__userAction}`}
