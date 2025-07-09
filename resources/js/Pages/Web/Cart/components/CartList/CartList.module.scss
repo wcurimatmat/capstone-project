@@ -1,0 +1,16 @@
+.CartList {
+    // cart list section
+    &__cartListSection {
+        flex: 1 24rem;
+    }
+
+    // cart list
+    &__cartList {
+        $cart-list-max-height: calc(var(--spc-900) * 5);
+
+        display: grid;
+        gap: var(--spc-200);
+        max-height: $cart-list-max-height;
+        overflow-x: scroll;
+    }
+}
