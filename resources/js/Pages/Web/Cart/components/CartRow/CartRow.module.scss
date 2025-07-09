@@ -1,0 +1,42 @@
+.CartRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    // cart item wrapper
+    &__itemWrapper {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-200);
+    }
+
+    &__itemImage {
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        max-width: calc(var(--spc-900) + var(--spc-100));
+        border: 1px solid var(--clr-neutral-300);
+    }
+
+    &__textContentWrapper {
+        display: grid;
+        gap: var(--spc-50);
+    }
+
+    &__itemName {
+        font-weight: bold;
+    }
+
+    &__itemPrice,
+    &__itemDetails {
+        font-size: var(--fs-body-200);
+        color: var(--clr-neutral-600);
+    }
+
+    &__itemDetails {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-50);
+    }
+
+
+}
