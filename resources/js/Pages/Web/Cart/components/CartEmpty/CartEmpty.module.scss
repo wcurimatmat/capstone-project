@@ -1,0 +1,7 @@
+.CartEmpty {
+    flex: 1 24rem;
+
+    &__cartEmptyMessage {
+        margin-block-end: var(--spc-200);
+    }
+}
