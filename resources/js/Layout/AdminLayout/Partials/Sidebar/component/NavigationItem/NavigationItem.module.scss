@@ -1,0 +1,7 @@
+.NavigationItem {
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-100);
+    }
+}
