@@ -8,7 +8,7 @@ import CartEmpty from "./components/CartEmpty/CartEmpty.jsx";
 import styles from "./Cart.module.scss";
 
 // assets
-import { data } from "./components/CartRow/CartRowData.js";
+import { data } from "./components/CartRow/CartRowPlaceholder.js";
 import ItemDataContext from "./CartContext.js";
 
 const itemLength = data.length;
