@@ -1,7 +1,7 @@
 import WebLayout from "../../../../Layout/WebLayout";
 import Filter from "../components/Filter/Filter";
 import Catalog from "../components/ItemList/ItemList";
-import styles from "./Shop.module.scss";
+import styles from "./Catalog.module.scss";
 import { FunnelIcon } from "@phosphor-icons/react";
 import { useState } from "react";
 
