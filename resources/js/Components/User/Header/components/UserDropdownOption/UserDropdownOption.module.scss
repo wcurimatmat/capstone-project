@@ -1,0 +1,36 @@
+.HeaderUserMenu {
+    // user avatar
+
+    &__user {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-200);
+        border-block: 1px solid var(--clr-neutral-100);
+        padding: var(--spc-200);
+    }
+
+    &__userAvatar {
+        width: var(--spc-600);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 100vmax;
+    }
+
+    // menu
+
+    &__menuNavItem {
+        padding-inline: var(--spc-200);
+    }
+
+    &__menuNavItem:hover {
+        background-color: var(--clr-primary-100);
+    }
+
+    &__menuNavLink {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-100);
+        padding-block: var(--spc-100);
+    }
+}
