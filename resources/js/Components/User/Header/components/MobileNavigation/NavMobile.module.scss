@@ -1,0 +1,50 @@
+.NavMobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+
+    @media screen and (min-width: 760px) {
+        display: none;
+        
+    }
+
+    // Nav Wrapper
+    &__wrapper {
+        padding: var(--spc-600);
+        background-color: var(--clr-primary-100);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    // Mobile Nav Button Wrapper
+    &__mobileNavButtonWrapper {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: var(--spc-900);
+    }
+
+    // Navgiation List
+    &__navigationList {
+        display: grid;
+        gap: var(--spc-500);
+    }
+
+    // Navigation Item
+    &__navigationItem {
+        text-align: center;
+    }
+
+    // Navigation Link
+    &__navigationLink {
+        font-size: var(--fs-heading-200);
+    }
+
+    // Nav State Modifier
+    &___active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
