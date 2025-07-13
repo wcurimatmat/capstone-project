@@ -14,8 +14,8 @@ Route::inertia("/cart", "Web/Cart/Index")->name("cart.index");
 
 // Auth
 
-Route::inertia("/login/session/create", "Web/Auth/Login/Create")->name("auth.create");
-Route::inertia("register/store", "Web/Auth/Register/Store")->name("auth.store");
+Route::inertia("/login", "Web/Auth/Login/Create")->name("login");
+Route::inertia("/register", "Web/Auth/Register/Store")->name("register");
 
 // admin panel
 
