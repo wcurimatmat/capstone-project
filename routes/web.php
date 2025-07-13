@@ -10,7 +10,7 @@ Route::inertia("/about", "Web/About/Index");
 Route::inertia("/catalogs", "Web/Catalog/Index/Index")->name("catalog.index");
 Route::inertia("/catalogs/item-name", "Web/Catalog/Show/Show");
 
-Route::inertia("/items", "Web/Cart/Index")->name("cart.index");
+Route::inertia("/cart", "Web/Cart/Index")->name("cart.index");
 
 // Auth
 
