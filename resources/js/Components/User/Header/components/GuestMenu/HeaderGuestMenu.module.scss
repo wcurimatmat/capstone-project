@@ -1,0 +1,18 @@
+.HeaderGuestMenu {
+    // menu
+
+    &__menuNavItem {
+        padding-inline: var(--spc-200);
+    }
+
+    &__menuNavItem:hover {
+        background-color: var(--clr-primary-100);
+    }
+
+    &__menuNavLink {
+        display: flex;
+        align-items: center;
+        gap: var(--spc-100);
+        padding-block: var(--spc-100);
+    }
+}
