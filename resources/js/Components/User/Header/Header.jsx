@@ -2,10 +2,10 @@
 import { ListIcon } from "@phosphor-icons/react";
 
 // Partials
-import Nav from "./Nav/Nav";
-import NavAppLogo from "./NavAppLogo/NavAppLogo";
-import HeaderActions from "./HeaderActions/HeaderActions";
-import NavMobile from "./NavMobile/NavMobile";
+import Nav from "./components/Nav/Nav";
+import AppLogo from "./components/AppLogo/AppLogo";
+import ActionGroup from "./components/ActionGroup/ActionGroup";
+import MobileNavigation from "./components/MobileNavigation/MobileNavigation";
 
 // Styles
 import styles from "./Header.module.scss";
@@ -28,13 +28,13 @@ function Header() {
                     </button>
                 </div>
 
-                <NavAppLogo />
+                <AppLogo />
                 <Nav />
-                <NavMobile
+                <MobileNavigation
                     mobileMenuState={mobileMenuState}
                     setMobileMenuState={setMobileMenuState}
                 />
-                <HeaderActions />
+                <ActionGroup />
             </div>
         </header>
     );
