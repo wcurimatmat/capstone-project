@@ -9,7 +9,7 @@ Route::get("/", function () {
 Route::inertia("/catalogs", "Web/Catalog/Index/Index")->name("shop.index");
 Route::inertia("/about", "Web/About/Index");
 
-Route::inertia("/shop/item-name", "Web/Shop/Show/Show");
+Route::inertia("/catalogs/item-name", "Web/Catalog/Show/Show");
 Route::inertia("/items", "Web/Cart/Index")->name("cart.index");
 
 // Auth
