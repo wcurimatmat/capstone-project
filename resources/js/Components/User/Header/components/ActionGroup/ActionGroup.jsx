@@ -11,7 +11,7 @@ import styles from "./HeaderActions.module.scss";
 import { useState, useEffect } from "react";
 import { Link } from "@inertiajs/react";
 
-function HeaderActions() {
+function ActionGroup() {
     const [userActionState, setUserActionState] = useState(false);
     const [isUserAuthenticated, setIsUserAuthenticated] = useState(false);
 
@@ -23,20 +23,20 @@ function HeaderActions() {
     }, [userActionState]);
 
     return (
-        <div className={styles.HeaderActions}>
-            <ul role="list" className={styles.HeaderActions__actionList}>
-                <li className={styles.HeaderActions__actionItem}>
+        <div className={styles.ActionGroup}>
+            <ul role="list" className={styles.ActionGroup__actionList}>
+                <li className={styles.ActionGroup__actionItem}>
                     <Link href={route("cart.index")}>
                         <ShoppingBagIcon size={24} />
                     </Link>
                 </li>
                 <li
-                    className={`${styles.HeaderActions__actionItem} ${styles.HeaderActions__userAction}`}
+                    className={`${styles.ActionGroup__actionItem} ${styles.ActionGroup__userAction}`}
                 >
                     <button
                         title="User"
                         onClick={() => setUserActionState(true)}
-                        className={styles.HeaderActions__actionButton}
+                        className={styles.ActionGroup__actionButton}
                         aria-expanded={userActionState ? true : false}
                         aria-controls="header-user-menu"
                     >
@@ -53,4 +53,4 @@ function HeaderActions() {
     );
 }
 
-export default HeaderActions;
+export default ActionGroup;
