@@ -6,7 +6,7 @@ import styles from "./HeaderUserActionMenu.module.scss";
 
 // components
 import Button from "../../../../Shared/Button/Button";
-import HeaderUserMenu from "../HeaderUserMenu/HeaderUserMenu";
+import HeaderUserMenu from "../UserDropdownOption/UserDropdownOption";
 import HeaderGuestMenu from "../GuestMenu/HeaderGuestMenu";
 
 function DropdownMenuWrapper({ isUserAuthenticated }) {
