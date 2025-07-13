@@ -1,6 +1,6 @@
 import WebLayout from "../../../../Layout/WebLayout";
-import Filter from "../Filter/Filter";
-import Catalog from "../Catalog/Catalog";
+import Filter from "../components/Filter/Filter";
+import Catalog from "../components/ItemList/ItemList";
 import styles from "./Shop.module.scss";
 import { FunnelIcon } from "@phosphor-icons/react";
 import { useState } from "react";
@@ -25,7 +25,7 @@ function Shop() {
                         className={styles.Shop__filterButton}
                         onClick={() => setFilterState(true)}
                     >
-                        <FunnelIcon size={18} /> 
+                        <FunnelIcon size={18} />
                         <span>Filter</span>
                     </button>
                 </section>

@@ -1,5 +1,5 @@
-import styles from "./Catalog.module.scss";
-import ProductCard from "../../../../Components/Shared/ProductCard/ProductCard";
+import styles from "./ItemList.module.scss";
+import ProductCard from "../../../../../Components/Shared/ProductCard/ProductCard";
 
 function Catalog() {
     return (

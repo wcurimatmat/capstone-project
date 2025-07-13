@@ -1,7 +1,7 @@
 import styles from "./ItemView.module.scss";
 import ItemMockImage from "/resources/assets/visuals/item-4.jpg";
 import WebLayout from "/resources/js/Layout/WebLayout";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "../components/Dropdown/Dropdown";
 
 // components
 import Button from "/resources/js/Components/Shared/Button/Button";
@@ -55,8 +55,17 @@ function ItemView() {
                                     <Dropdown />
                                 </div>
                                 <div className={styles.ItemView__formActions}>
-                                    <Button className={styles.ItemView__formAction}>Buy Now</Button>
-                                    <Button className={styles.ItemView__formAction} variant="secondary">Add To Bag</Button>
+                                    <Button
+                                        className={styles.ItemView__formAction}
+                                    >
+                                        Buy Now
+                                    </Button>
+                                    <Button
+                                        className={styles.ItemView__formAction}
+                                        variant="secondary"
+                                    >
+                                        Add To Bag
+                                    </Button>
                                 </div>
                             </form>
                         </div>
