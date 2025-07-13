@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 Route::get("/", function () {
     return inertia("Web/Home/Index");
 });
-Route::inertia("/about", "Web/About/Index");
+Route::inertia("/about", "Web/About/Index")->name("about");
 
 Route::inertia("/catalogs", "Web/Catalog/Index/Index")->name("catalog.index");
 Route::inertia("/catalogs/item-name", "Web/Catalog/Show/Show");
