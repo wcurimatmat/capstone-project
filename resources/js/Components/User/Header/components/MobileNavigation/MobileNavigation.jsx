@@ -1,15 +1,20 @@
-import { XIcon } from "@phosphor-icons/react";
-import styles from "./NavMobile.module.scss";
+// stylesheet
+import styles from "./MobileNavigation.module.scss";
 
-function NavMobile({ mobileMenuState, setMobileMenuState }) {
+// asset
+import { XIcon } from "@phosphor-icons/react";
+
+function MobileNavigation({ mobileMenuState, setMobileMenuState }) {
     return (
         <nav
-            className={`${styles.NavMobile} ${
-                mobileMenuState ? styles.NavMobile___active : ""
+            className={`${styles.MobileNavigation} ${
+                mobileMenuState ? styles.MobileNavigation___active : ""
             }`}
         >
-            <div className={styles.NavMobile__wrapper}>
-                <div className={styles.NavMobile__mobileNavButtonWrapper}>
+            <div className={styles.MobileNavigation__wrapper}>
+                <div
+                    className={styles.MobileNavigation__mobileNavButtonWrapper}
+                >
                     <button
                         onClick={() => setMobileMenuState(!setMobileMenuState)}
                     >
@@ -17,35 +22,38 @@ function NavMobile({ mobileMenuState, setMobileMenuState }) {
                     </button>
                 </div>
 
-                <ul className={styles.NavMobile__navigationList} role="list">
-                    <li className={styles.NavMobile__navigationItem}>
+                <ul
+                    className={styles.MobileNavigation__navigationList}
+                    role="list"
+                >
+                    <li className={styles.MobileNavigation__navigationItem}>
                         <a
                             href="#"
-                            className={styles.NavMobile__navigationLink}
+                            className={styles.MobileNavigation__navigationLink}
                         >
                             Home
                         </a>
                     </li>
-                    <li className={styles.NavMobile__navigationItem}>
+                    <li className={styles.MobileNavigation__navigationItem}>
                         <a
                             href="#"
-                            className={styles.NavMobile__navigationLink}
+                            className={styles.MobileNavigation__navigationLink}
                         >
                             Shop
                         </a>
                     </li>
-                    <li className={styles.NavMobile__navigationItem}>
+                    <li className={styles.MobileNavigation__navigationItem}>
                         <a
                             href="#"
-                            className={styles.NavMobile__navigationLink}
+                            className={styles.MobileNavigation__navigationLink}
                         >
                             About
                         </a>
                     </li>
-                    <li className={styles.NavMobile__navigationItem}>
+                    <li className={styles.MobileNavigation__navigationItem}>
                         <a
                             href="#"
-                            className={styles.NavMobile__navigationLink}
+                            className={styles.MobileNavigation__navigationLink}
                         >
                             Contact
                         </a>
@@ -56,4 +64,4 @@ function NavMobile({ mobileMenuState, setMobileMenuState }) {
     );
 }
 
-export default NavMobile;
+export default MobileNavigation;
