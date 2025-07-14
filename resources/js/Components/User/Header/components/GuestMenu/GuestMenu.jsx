@@ -11,7 +11,7 @@ function HeaderGuestMenu() {
                 <ul className="HeaderGuestMenu__menuNavList">
                     <li className={styles.HeaderGuestMenu__menuNavItem}>
                         <a
-                            href={route("auth.create")}
+                            href={route("login")}
                             className={styles.HeaderGuestMenu__menuNavLink}
                         >
                             <SignInIcon size={20} />
@@ -20,7 +20,7 @@ function HeaderGuestMenu() {
                     </li>
                     <li className={styles.HeaderGuestMenu__menuNavItem}>
                         <a
-                            href={route("auth.store")}
+                            href={route("register")}
                             className={styles.HeaderGuestMenu__menuNavLink}
                         >
                             <UserPlusIcon size={20} />
