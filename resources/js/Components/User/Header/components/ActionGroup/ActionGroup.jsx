@@ -2,7 +2,7 @@
 import { ShoppingBagIcon, UserCircleIcon } from "@phosphor-icons/react";
 
 // components
-import HeaderUserActionMenu from "../HeaderUserActionMenu/HeaderUserActionMenu";
+import ActionMenu from "../ActionMenu/ActionMenu"
 
 // styles
 import styles from "./HeaderActions.module.scss";
@@ -42,7 +42,7 @@ function ActionGroup() {
                     >
                         <UserCircleIcon size={24} />
                     </button>
-                    <HeaderUserActionMenu
+                    <ActionMenu
                         userActionState={userActionState}
                         setUserActionState={setUserActionState}
                         isUserAuthenticated={isUserAuthenticated}
