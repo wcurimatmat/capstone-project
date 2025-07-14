@@ -1,30 +1,28 @@
+// stylesheet
 import styles from "./Nav.module.scss";
+
+// asset
+import navLinks from "./navLink";
+
+// dependencies
+import { Link } from "@inertiajs/react";
+
+function NavLinkItem() {
+    return navLinks.map((navLink) => (
+        <li className={styles.Nav__navigationItem}>
+            <Link href={navLink.url} className={styles.Nav__navigationLink}>
+                {navLink.name}
+            </Link>
+        </li>
+    ));
+}
 
 function Nav() {
     return (
         <nav className={styles.Nav}>
             <div className={styles.Nav__wrapper}>
                 <ul className={styles.Nav__navigationList} role="list">
-                    <li className={styles.Nav__navigationItem}>
-                        <a href="#" className={styles.Nav__navigationLink}>
-                            Home
-                        </a>
-                    </li>
-                    <li className={styles.Nav__navigationItem}>
-                        <a href="#" className={styles.Nav__navigationLink}>
-                            Shop
-                        </a>
-                    </li>
-                    <li className={styles.Nav__navigationItem}>
-                        <a href="#" className={styles.Nav__navigationLink}>
-                            About
-                        </a>
-                    </li>
-                    <li className={styles.Nav__navigationItem}>
-                        <a href="#" className={styles.Nav__navigationLink}>
-                            Contact
-                        </a>
-                    </li>
+                    <NavLinkItem />
                 </ul>
             </div>
         </nav>
