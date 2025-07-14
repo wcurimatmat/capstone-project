@@ -1,4 +1,4 @@
-import appLogo from "../../../../../assets/logo/rjs.png";
+import appLogo from "/resources/assets/logo/app-logo-vector.svg";
 import styles from "./AppLogo.module.scss";
 
 function AppLogo() {
@@ -6,7 +6,7 @@ function AppLogo() {
         <figure className={styles.AppLogo}>
             <a href="">
                 <img
-                    src={AppLogo}
+                    src={appLogo}
                     alt="app header logo"
                     className={styles.AppLogo__appLogo}
                 />
