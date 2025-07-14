@@ -7,12 +7,12 @@ import styles from "./HeaderUserActionMenu.module.scss";
 // components
 import Button from "../../../../Shared/Button/Button";
 import UserMenu from "../UserMenu/UserMenu";
-import HeaderGuestMenu from "../GuestMenu/HeaderGuestMenu";
+import GuestMenu from "../GuestMenu/GuestMenu";
 
 function MenuContent({ isUserAuthenticated }) {
     return (
         <div className="HeaderUserActionMenu__menuContentWrapper">
-            {isUserAuthenticated ? <UserMenu /> : <HeaderGuestMenu />}
+            {isUserAuthenticated ? <UserMenu /> : <GuestMenu />}
         </div>
     );
 }
