@@ -3,6 +3,23 @@ import styles from "./MobileNavigation.module.scss";
 
 // asset
 import { XIcon } from "@phosphor-icons/react";
+import navLinks from "../Nav/navLink";
+
+// dependencies
+import { Link } from "@inertiajs/react";
+
+function MobileNavigationLinkList() {
+    return navLinks.map((navLink) => (
+        <li className={styles.MobileNavigation__navigationItem}>
+            <Link
+                href={navLink.url}
+                className={styles.MobileNavigation__navigationLink}
+            >
+                {navLink.name}
+            </Link>
+        </li>
+    ));
+}
 
 function MobileNavigation({ mobileMenuState, setMobileMenuState }) {
     return (
@@ -26,38 +43,7 @@ function MobileNavigation({ mobileMenuState, setMobileMenuState }) {
                     className={styles.MobileNavigation__navigationList}
                     role="list"
                 >
-                    <li className={styles.MobileNavigation__navigationItem}>
-                        <a
-                            href="#"
-                            className={styles.MobileNavigation__navigationLink}
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li className={styles.MobileNavigation__navigationItem}>
-                        <a
-                            href="#"
-                            className={styles.MobileNavigation__navigationLink}
-                        >
-                            Shop
-                        </a>
-                    </li>
-                    <li className={styles.MobileNavigation__navigationItem}>
-                        <a
-                            href="#"
-                            className={styles.MobileNavigation__navigationLink}
-                        >
-                            About
-                        </a>
-                    </li>
-                    <li className={styles.MobileNavigation__navigationItem}>
-                        <a
-                            href="#"
-                            className={styles.MobileNavigation__navigationLink}
-                        >
-                            Contact
-                        </a>
-                    </li>
+                    <MobileNavigationLinkList />
                 </ul>
             </div>
         </nav>
