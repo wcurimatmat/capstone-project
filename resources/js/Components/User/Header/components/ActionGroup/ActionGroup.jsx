@@ -5,7 +5,7 @@ import { ShoppingBagIcon, UserCircleIcon } from "@phosphor-icons/react";
 import ActionMenu from "../ActionMenu/ActionMenu"
 
 // styles
-import styles from "./HeaderActions.module.scss";
+import styles from "./ActionGroup.module.scss";
 
 // dependencies
 import { useState, useEffect } from "react";
