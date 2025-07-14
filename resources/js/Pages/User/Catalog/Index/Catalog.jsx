@@ -1,4 +1,4 @@
-import WebLayout from "../../../../Layout/WebLayout";
+import UserLayout from "../../../../Layout/UserLayout";
 import Filter from "../components/Filter/Filter";
 import Catalog from "../components/ItemList/ItemList";
 import styles from "./Catalog.module.scss";
@@ -9,7 +9,7 @@ function Shop() {
     const [filterState, setFilterState] = useState(false);
 
     return (
-        <WebLayout>
+        <UserLayout>
             <div className={styles.Shop}>
                 <section className={styles.Shop__breadcrumbsWrapper}>
                     {/* TODO Breadcrumbs */}
@@ -40,7 +40,7 @@ function Shop() {
                     Pagination
                 </section>
             </div>
-        </WebLayout>
+        </UserLayout>
     );
 }
 

@@ -1,13 +1,13 @@
 import BrandingSectionImage from "../../../../assets/visuals/pexels-rachel-claire-5531540.jpg";
 import ContentImageI from "../../../../assets/visuals/pexels-caio-mantovani-97605853-29310358.jpg";
 import ContentImageII from "../../../../assets/visuals/pexels-avery-arwood-713708816-21370908.jpg";
-import WebLayout from "../../../Layout/WebLayout";
+import UserLayout from "../../../Layout/UserLayout";
 import Ellipsis from "./Ellipsis/Ellipsis";
 import styles from "./About.module.scss";
 
 function About() {
     return (
-        <WebLayout>
+        <UserLayout>
             <div className={styles.About}>
                 <section
                     className={styles.About__aboutHero}
@@ -143,7 +143,7 @@ function About() {
                     </div>
                 </section>
             </div>
-        </WebLayout>
+        </UserLayout>
     );
 }
 

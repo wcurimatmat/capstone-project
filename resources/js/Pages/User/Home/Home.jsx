@@ -1,6 +1,6 @@
 import AboutImage from "../../../../assets/visuals/pexels-daroon-19087201.jpg";
 import { SparkleIcon, ThumbsUpIcon, MoneyIcon } from "@phosphor-icons/react";
-import WebLayout from "../../../Layout/WebLayout";
+import UserLayout from "../../../Layout/UserLayout";
 import ProductCard from "../../../Components/Shared/ProductCard/ProductCard";
 import styles from "./Home.module.scss";
 
@@ -9,7 +9,7 @@ import Anchor from "../../../Components/Shared/Anchor/Anchor";
 
 function Home() {
     return (
-        <WebLayout>
+        <UserLayout>
             <div className={styles.Home}>
                 {/* Hero Section */}
                 <section
@@ -23,7 +23,7 @@ function Home() {
 
                         <Anchor href="#" variant="secondary">
                             Explore Shop
-                        </Anchor>          
+                        </Anchor>
                     </header>
                 </section>
 
@@ -231,7 +231,7 @@ function Home() {
                     </header>
                 </section>
             </div>
-        </WebLayout>
+        </UserLayout>
     );
 }
 

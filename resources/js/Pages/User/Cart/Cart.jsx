@@ -1,5 +1,5 @@
 // components
-import WebLayout from "../../../Layout/WebLayout";
+import UserLayout from "../../../Layout/UserLayout";
 import CartList from "./components/CartList/CartList.jsx";
 import CartSummary from "./components/CartSummary/CartSummary.jsx";
 import CartEmpty from "./components/CartEmpty/CartEmpty.jsx";
@@ -25,7 +25,7 @@ function CartListBody() {
 
 function Cart() {
     return (
-        <WebLayout>
+        <UserLayout>
             <div className="Cart">
                 <div className={styles.Cart__mainContainer}>
                     <header className={styles.Cart__mainHeader}>
@@ -44,7 +44,7 @@ function Cart() {
                     </div>
                 </div>
             </div>
-        </WebLayout>
+        </UserLayout>
     );
 }
 

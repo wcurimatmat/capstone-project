@@ -1,6 +1,6 @@
 import styles from "./ItemView.module.scss";
 import ItemMockImage from "/resources/assets/visuals/item-4.jpg";
-import WebLayout from "/resources/js/Layout/WebLayout";
+import UserLayout from "/resources/js/Layout/UserLayout";
 import Dropdown from "../components/Dropdown/Dropdown";
 
 // components
@@ -8,7 +8,7 @@ import Button from "/resources/js/Components/Shared/Button/Button";
 
 function ItemView() {
     return (
-        <WebLayout>
+        <UserLayout>
             <div className={styles.ItemView}>
                 <section
                     className={styles.ItemView__breadcrumb}
@@ -119,7 +119,7 @@ function ItemView() {
                     Policies in accordion format!
                 </section>
             </div>
-        </WebLayout>
+        </UserLayout>
     );
 }
 
