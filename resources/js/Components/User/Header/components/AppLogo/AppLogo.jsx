@@ -1,4 +1,4 @@
-import AppLogo from "../../../../../assets/logo/rjs.png";
+import appLogo from "../../../../../assets/logo/rjs.png";
 import styles from "./AppLogo.module.scss";
 
 function AppLogo() {
