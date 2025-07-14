@@ -1,7 +1,7 @@
-import Header from "../Components/Web/Header/Header";
-import Footer from "../Components/Web/Footer/Footer";
+import Header from "../Components/User/Header/Header";
+import Footer from "../Components/User/Footer/Footer";
 
-function WebLayout({ children }) {
+function UserLayout({ children }) {
     return (
         <>
             <Header />
@@ -11,4 +11,4 @@ function WebLayout({ children }) {
     );
 }
 
-export default WebLayout;
+export default UserLayout;
